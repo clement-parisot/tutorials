@@ -39,7 +39,7 @@ Once connected to the user frontend, book 1 core for half an hour (as we will us
     jdoe@access:~$ oarsub -I -l core=1,walltime="00:30:00"
 
 When the job is running and you are connected load R module (version compiled with Intel Compiler).
-For a complete list of availbale modules see: [Software page](https://hpc.uni.lu/users/software/).
+For a complete list of available modules see: [Software page](https://hpc.uni.lu/users/software/).
 
     jdoe@access:~$ module load lang/R/3.2.0-ictce-7.3.5-bare
 
