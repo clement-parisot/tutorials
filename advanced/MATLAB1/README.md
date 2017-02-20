@@ -305,7 +305,7 @@ resources needlessly.
         
 The following minimal example shows how to run a serial (1 core) MATLAB script for 24 hours in passive mode:
 
-        (gaia-frontend)$> oarsub -l walltime=24:00:00 "source /etc/profile; module load base/MATLAB; matlab -nodisplay -nosplash < INPUTFILE.m > OUTPUTFILE.out"
+        (gaia-frontend)$> oarsub -l walltime=24:00:00 "source /etc/profile; module load base/MATLAB; matlab -nodisplay -nosplash -r INPUTFILE -logfile OUTPUTFILE.out"
 
 Ideally you __would not__ run MATLAB jobs like this but instead [create/adapt a launcher script](https://github.com/ULHPC/launcher-scripts) to contain those instructions. A minimal shell script (e.g. named 'your\_matlab\_launcher.sh') could be:
 
